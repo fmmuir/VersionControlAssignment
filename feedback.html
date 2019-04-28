@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+      <meta  name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+      <link rel="stylesheet" href="css/stylesheet.css">
+	  <link rel="stylesheet" href="css/stylesheetnavbar.css"> <!-- this is the header & menu style sheet-->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  
+
+      <title>Feedback</title>
+  </head>
+    <body>
+
+	
+<!--Navigation bar-->
+ <div id="main-bar"></div>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+    <!--add this line to generate the nav bar-->
+    <script src="js/nav-bar.js?id=index" id="nav-bar"></script>
+
+<!--end of Navigation bar-->
+
+
+	   <div>
+         <h1>Feedback</h1>
+      </div>
+		 
+	<form class="feedback_form" action="submit.html" method="post" >
+	<h3 id="form"> We would really appreaciate some feedback on how useful you found this website. Thanks   </h3>
+	<table class="tableform">	
+
+  <thead>
+    <tr>
+      <th class="col-4"></th>
+      <th class="col-5"></th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td><label for ="fname">First Name:</label></td> <!--column1-->
+      <td><input type="text"  placeholder="Your first name.." id="fname"required></td>
+    </tr>
+	
+    <tr>
+      <td><label for="lname">Last Name: </label></td> <!--column1-->
+      <td>	<input type="text" placeholder="Your last name.." id="lname" required></td>
+    </tr>
+	
+      <tr>
+      <td><label for ="user_id"> User ID: </label> </td> <!--column1-->
+      <td><input type="text"  placeholder="Enter User ID" id="user_id"required></td>
+    </tr>    
+	
+
+      <tr>
+      <td>	<label for="work_area">Work Area:</label></td> <!--column1-->
+      <td><select id="work_area">
+    <option selected disabled>--Select Work Area--</option>
+    <option>Office</option>
+    <option>Shopfloor</option>
+	</select></td>
+    </tr>    
+	 <td><label for="group1">Have you found this website useful? </label> </td>
+	  
+     <td> <input type="radio" value="Yes" name="group1" id="yes" required> Yes
+    <input type="radio" value="No" name="group1" id="no" required> No </td>
+ 
+	
+	<tr>
+      <td> <label for="comments">Add Comments</label> </td> <!--column1-->
+      <td> <textarea id="comments" name="comments" placeholder="Add any comments here.." style="height:100px" rows="4"></textarea></td>
+    </tr>
+	
+	
+	<tr>
+        <td> 	 <input type="submit" id="submitb" value="Submit"></td>
+    </tr>
+	
+  </tbody>
+</table>
+	
+		</form>
+		
+		
+	  <footer class="footer">
+  	<em>Copyright &copy 2019 Halliburton. All Rights Reserved. </em>
+    </footer>
+
+
+
+    </body>
+</html>
