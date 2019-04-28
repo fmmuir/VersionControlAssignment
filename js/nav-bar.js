@@ -1,16 +1,25 @@
 $(function () {
     var bar = '';
-    bar += '<nav class="navbar navbar-default" role="navigation">';
-    bar += '<div class="container-fluid">';
-    bar += '<div>';
-    bar += '<ul class="nav navbar-nav">';
-    bar += '<li id="home"><a href="home.html">Home</a></li>';
-    bar += '<li id="index"><a href="index.html">Index</a></li>';
-    bar += '<li id="about"><a href="about.html">About</a></li>';
-    bar += '</ul>';
-    bar += '</div>';
-    bar += '</div>';
-    bar += '</nav>';
+
+	  bar += '<section id="wrapper">';
+	  bar += '<div id="headerwrap">';
+	       bar += ' <header id="header">';
+	      	 bar += '<img src ="images/index/Hal100Header.png" alt="Header logo" title="Halliburton Logo" />';
+			 bar += '</header>';
+           bar += ' </div>';
+         bar += '</div>';
+
+		 bar += '<div id="navigationwrap">';
+          bar += ' <nav id="navbar">';
+		     
+           bar += '    <a class="active" href="index.html" target="_top"><i class="fa fa-fw fa-home" alt="home page link" title="Home"></i> Home</a>';
+           bar += '    <a href="Health.html" target="_top"><i class="fa fa-fw fa-heartbeat" alt="health and welfare link" title="Health & Welfare"></i> Health & Welfare</a>';
+           bar += '   <a href="Facilities.html" target="_top"><i class="fa fa-fw fa-sitemap" alt="facilties link" title="Arbroath Facilities"></i> Facilities</a>';
+           bar += '   <a href="Communication.html" target="_top"><i class="fa fa-fw fa-envelope" alt="communication link" title="Communication"></i> Communication</a>';
+           bar += '   <a href="Feedback.html" target="_top"><i class="fa fa-fw fa-comments" alt="feedback link" title="Feedback"></i> Feedback</a>';
+           bar += '</div>';
+         bar += '</nav>';
+    bar += '</section>';	
  
     $("#main-bar").html(bar);
  
