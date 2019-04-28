@@ -1,5 +1,5 @@
-  /***** Website style *****/
-	/* this has been developed to incorporate styles throughout the web project*/
+    /***** Website style *****/
+	/* this has been developed t incorporate the Halliburtons branding requirements*/
 
 	/* body style elements - ALL PAGES*/
 	html
@@ -20,6 +20,9 @@ body {
 	display: block;
 	padding-bottom: 100px; /* height of your footer */
 }
+
+
+
 /* --- Style properties shared by all Headers & paragraphs throughout the project ---*/
 
 	h1, h2, h3, h4{
@@ -35,3 +38,384 @@ body {
 	padding: 30px;
 
 }
+
+
+/*--- h2 Headers ---*/
+h2 {
+	
+	font-size: 20px;
+	text-align: top;
+	padding: 15px;
+}
+
+h3 {
+	
+	font-size: 16px;
+	text-align: top;
+	padding: 15px;
+}
+
+h4 {
+	
+	font-size: 15px;
+	text-align: top;
+	padding: 10px;
+}
+
+p {
+	
+	color: black;
+	line-height: 1.6;
+	text-align: left;
+	text-align: top;
+    padding: 15px;
+}
+
+/*********************** INDEX PAGE LAYOUT - RESPOSIVE TO SCREEN SIZE CHANGES************************************************/
+
+ .column1 {
+  float: left;
+  width: 40%;
+  padding: 5px;
+  margin-left: 50px;
+
+}
+
+ .column2 {
+  float: center;
+  width: 10%;
+  padding: 5px;
+  margin-right: 50px;
+
+}
+
+
+ .column3 {
+  float: right;
+  width: 50%;
+background:#FFFFFF;
+	border-radius: 10px;
+  margin-right: 50px;
+
+}
+
+
+/********************************** INDEXT PAGE IMAGES ********************************************************************/
+/* ArbPlant #hal100 only used on  the index.html page. Plant photo and location mao set to be responsive to screen size changes */ 
+
+
+#ArbPlant{
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		float: left;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 10px;
+		clear: both;
+}
+
+
+#ArbLocation{
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		margin-top:40px;
+	
+
+}
+
+
+#hal100{
+	
+	float: left;
+	width: 100px;	
+	padding: 15px;
+}
+
+
+/* *****************************************USED IN SEVERAL PAGES ****************************************************************************/
+/* used on the communication/html page to produce seperate columns for each topic developed from w3school tutorial*/
+/* Float four columns side by side */
+
+/* Float three columns side by side */
+ .column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+
+  padding: 16px;
+  text-align: center;
+
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+} 
+
+
+/* add properties for the icon images in the cards*/
+
+#icon{
+	float: left;
+	margin: 0;
+	margin-bottom: 1.5px;
+	height: 32px;
+	width: 42px;
+
+	
+}
+	/* change link colour in cardss */
+.link{
+	
+
+	color: #0000FF;	
+	font-weight: bold;
+}
+	  
+.link:hover { 
+/* CSS link hover (green) */
+color: #CC0000; 
+} 
+
+
+ /* ths right class is used to add colour around the cards. Will be using it throughout the project*/
+.right {
+  position: relative;
+  background-color: white;
+  border: 14px solid #cc0000; 
+  padding: 1px;
+}
+
+
+/******************************** FACILITIES PAGE *****************************************************/
+
+/* table1 settings for facilties page use to show the bell times*/
+
+
+.tabledesign {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+/* Column widths are based on these cells */
+.col-1 {
+  width: 35%;
+}
+.col-2 {
+  width: 15%;
+}
+.col-3 {
+  width: 40%;
+}
+
+
+/******************************* JARGON BUSTER PAGE ****************************************************/
+
+.col-6 {
+  width: 25%;
+  margin-left: 20px;
+  line-height: 2;
+}
+.col-7 {
+  width: 60%;
+
+}
+
+.tabledesign td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tabledesign th {
+  background: #CC0000;
+  color: white;
+}
+.tabledesign td,
+.tabledesign th {
+  text-align: left;
+  padding: 5px 10px;
+  	margin-left: 10px;
+	margin-bottom:15px;
+  
+}
+/* this is uesd to make each second row the light grey colour/ */
+.tabledesign tr:nth-child(even) {
+  background: #D4DADD;
+}
+}
+
+/******************************* FEEDBACK PAGE - Form Styling ****************************************************/
+
+/*form style properties*/
+
+
+.col-4 {
+  width: 20%;
+  text-align:left;
+}
+.col-5 {
+  width: 70%;
+}
+
+
+.tableform td,
+.tableform th {
+
+  padding-left: 40px ;
+	
+  
+}
+input[type=text], select, textarea {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+label {
+
+
+	text-align:top;
+	clear: both;
+    float:left;
+    margin-right:5px;
+
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.feedback_form{
+	background: #CC0000; 
+	margin-left: 60px;
+	border-radius: 10px;
+	width: 950px;
+    padding-bottom:40px;
+	color:#FFFFFF;
+	font-weight: bold;	
+}
+
+#form{
+  color: white;	
+	font-weight: bold;
+}
+#fname,#lname, #user_id, #work_area, #radio, #comments {
+	 
+	margin-left: 40px;
+	
+
+ }
+ 
+  
+   #comments{
+	 width:500px;
+  }
+  
+  #yes {
+	 margin-left: 40px; 
+	 margin-top:30px;
+	 margin-bottom:30px;
+  }
+ 
+ #submitb{
+	 background:#000000;
+	 font-weight: bold;
+	 float:left;
+	 clear:both;
+ }
+ 
+ #submitb:hover {
+  background-color: #990000 ;
+ }
+  
+
+  
+  /******************* JARGON BUSTER PAGE *************************************************/
+  /* using the previous tabledesign code for the layout, just dont want it in the entire page*/
+  
+  .container{
+	  width: 650px;
+	  background: #FFFFFF;
+	  margin-left: 60px;
+	  font-weight: bold;
+	  clear:both;
+	  line-height: 2.6;
+	  
+  }
+  /*********************** HISTORY PAGE LAYOUT ************************************************/
+/* Reused the column approach used in the indext page, added new columns as width % are different. history.html page */
+
+
+.column4 {
+  float: left;
+  width: 65%;
+  padding: 5px;
+  margin-left: 50px;
+
+}
+
+/* creates a space between the other two column*/
+ .column5 {
+  float: center;
+  width: 10%;
+  padding: 5px;
+  margin-right: 50px;
+
+}
+
+
+ .column6 {
+  float: right;
+  width: 25%;
+	border-radius: 0.625em;
+  margin-right: 50px;
+ }
+ 
+ #video1{
+	
+  width: 100%;
+  height: auto;	
+ }
+
+#ErlePHalliburton{
+	width: 100%;
+	height: auto;
+padding: 30px;
+}
+
+  
+  
+
+
+	
+	
