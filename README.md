@@ -1,0 +1,3 @@
+# VersionControlAssignment
+Version control assignment
+This project to being used to demonstrate an understanding of version control software. The project being controlled was submitted as part of a Developing Information Systems assignment. The assignment did not allow the use of JavaScript, however there are some changes I would like to make to the project to allow the navigational bar to be available from one location rather than in each page. Also the feedback form doesn’t work so would like to add functionality to send the feedback as an email to HRD.
