@@ -1,0 +1,20 @@
+html, body, .container {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: green;
+  color: white;
+}
+.container {
+  padding-top: 97px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.footer {
+  background-color: orange;
+  color: white;
+  margin-top: auto;
+}
